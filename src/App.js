@@ -3,10 +3,12 @@ import axios from "axios";
 import "./App.css";
 import { useState } from "react";
 
-import SearchBar from "./Components/SearchBar";
+
 import MovieTrailer from "./Components/MovieTrailer";
 import MovieList from "./Components/MovieList";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+
 
 function App() {
   const API_URL = "https://api.themoviedb.org/3";
@@ -107,6 +109,7 @@ function App() {
         IMAGE_PATH={IMAGE_PATH}
         functionSelectMovie={selectMovie}
       ></MovieList>
+     <Footer />
     </div>
   );
 }

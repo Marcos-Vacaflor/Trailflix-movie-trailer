@@ -58,6 +58,7 @@ select:focus {
   outline: none;
 }
 
+/************ Movie Trailer Css ************/
 .viewtrailer{
   min-height: 700px;
   background-size: 80%;
@@ -158,10 +159,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 
-
+.imput{
+  position: relative;
+  top: -3px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 3px;
+}
 .b-buscar{
-  position: absolute;
-  top:-100
+  
+  visibility: hidden;
 }
 .social-icon {
   display: inline-flex;
@@ -202,9 +209,6 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-
-
-
 
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -253,13 +257,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+
+/************ List Movie Css ************/
 .movie{
   width: 330px;
   height: 370px;
   display: flex;
 flex-direction: column;
 align-items: center;
-margin: 0 5px 15px 5px;
+margin: 0 5px 5% 5px;
 }
 
  .movie img {
@@ -268,11 +274,6 @@ margin: 0 5px 15px 5px;
   border-radius: 5px;
   cursor: pointer;
 }
-
-
-
-
-
 
 .movie:hover{
 border-radius: 10px;
@@ -296,3 +297,23 @@ border-radius: 10px;
   cursor: pointer;
 }
 
+/************ Footer Css ************/
+.footer {
+ 
+  background-color: #121212;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.footer img {
+  width: 10%;
+
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #b8b8b8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}

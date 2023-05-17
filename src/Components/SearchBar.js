@@ -7,8 +7,9 @@ function SearchBar( props ) {
       <form className="container mt-11" onSubmit={props.searchMovies}>
        
         <input
+          className='imput'
           type="text"
-          placeholder="search"
+          placeholder="Search movie"
           onChange={(e) => props.functionSetSearchBar(e.target.value)}
         />
         <button className="b-buscar" ref={botonRef}></button>
